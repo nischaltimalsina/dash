@@ -1,0 +1,82 @@
+.sidebar {
+  background-color: #ffffff;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+.logo {
+  height: 80px;
+  width: auto;
+}
+.bi {
+  pointer-events: none;
+  fill: currentColor;
+}
+.nav-flush .nav-link {
+  border-radius: 15px;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:visited {
+  background-color: #5eb3a8 !important;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.dashboard {
+  overflow-y: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+}
+.links {
+  width: calc(100% - 250px);
+  overflow-y: scroll;
+  height: 100vh;
+}
+.spotlight{
+    width: 49%;
+    margin-left: 10px;
+}
+@media screen and (max-width: 850px) {
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar ul li span {
+    display: none;
+  }
+
+  .dashboard {
+    width: calc(100% - 100px);
+  }
+  .links {
+    width: calc(100% - 100px);
+  }
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  .footer {
+    display: none;
+  }
+  .bi {
+    font-size: x-large;
+  }
+  .welcome {
+    width: 100%;
+  }
+  .spotlight {
+      width: 100%;
+    margin-left: 0px;
+  }
+}
